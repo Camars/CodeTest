@@ -10,7 +10,6 @@ $(document).ready(function () {
   $(function () {
     $('.js-toggle').click(function () {
       if($('.in_cart').length === 0) {
-        console.log('none here');
         $('.js-subtotal_contents').html('Nothing here yet!');
         $('#js-subtotal').html('$0.00');
       }

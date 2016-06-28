@@ -57,7 +57,7 @@ $(document).ready(function () {
       $('#header').html(data.category);
       var products = data.products.map(function (products) {
         var meta = '<meta itemprop="image">';
-        var image_source = '../images/' + products.image;
+        var image_source = '/images/' + products.image;
         var product_image = '<img class=img-responsive src="' + image_source + '"/>';
         var product_title = '<h4 class="c-title c-product_flex js-product_flex" itemprop="name">' + products.title + '</h4>';
         var price = parseFloat(products.price).toFixed(2);
